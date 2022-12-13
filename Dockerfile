@@ -4,11 +4,11 @@ RUN mkdir /build
 WORKDIR /build
 
 RUN export GO111MODULE=auto
-RUN go get github.com/lenichols/Tech-Books-API/main
+RUN go get github.com/lenichols/Tech-Books-API
 RUN cd /build && git clone github.com/lenichols/Tech-Books-API.git
 
-RUN cd /build/Books-API/main && go build
+RUN cd /build/Books-API/ && go build
 
 EXPOSE 8080
 
-ENTRYPOINT [ "/build/Tech-Books-API/main/main" ]
+ENTRYPOINT [ "/build/Tech-Books-API/main/" ]
