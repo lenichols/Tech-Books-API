@@ -28,13 +28,15 @@ curl http://localhost:8080
 
 ## Routes
 
-Run the localhost url in your browser
+Route         | Method        | Call
+------------- | ------------- | -------------
+/books  | GET  | getBooks
+/books/:id  | GET  | bookById
+/books  | POST  | createBook
+/checkout  | PATCH  | checkoutBook
+/return  | PATCH  | returnBook
 
-/books => getBooks (GET)
-/books/:id => bookById (GET)
-/books => createBook (POST)
-/checkout => checkoutBook (PATCH use Query param ?id=(n)) 
-/return => returnBook (PATCH use Query param ?id=(n)) 
+For PATCH use Query param ?id=(n)
 
 
 
