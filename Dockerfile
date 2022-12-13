@@ -3,7 +3,7 @@ FROM golang:latest
 RUN mkdir /build
 WORKDIR /build
 
-RUN export GO111MODULE=on
+RUN export GO111MODULE=auto
 RUN go get github.com/lenichols/Tech-Books-API/main
 RUN cd /build && git clone github.com/lenichols/Tech-Books-API.git
 
