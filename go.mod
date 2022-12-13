@@ -1,4 +1,4 @@
-module github.com/XXG-Books-Api
+module github.com/lenichols/Tech-Books-API
 
 go 1.19
 
